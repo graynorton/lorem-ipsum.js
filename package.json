@@ -9,6 +9,7 @@
     "url": "git://github.com/knicklabs/node-lorem-ipsum.git"
   },
   "main": "dist/index",
+  "module": "dist-esm/index.js",
   "bin": {
     "lorem-ipsum": "dist/bin/lorem-ipsum.bin.js"
   },
@@ -17,6 +18,7 @@
     "type-check": "tsc --noEmit",
     "build:types": "rm -rf types && tsc --emitDeclarationOnly",
     "build:js": "rm -rf dist && babel src --ignore '**/*.test.ts' --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "build:esm": "rm -rf dist-esm && tsc --module esnext --outDir temp --moduleResolution nodenext --target es2021 && mv temp/src dist-esm && rm -rf temp",
     "build:exec": "gsed -i '1i #!/usr/bin/env node' dist/bin/lorem-ipsum.bin.js",
     "build": "npm run build:types && npm run build:js && npm run build:exec",
     "lint:check": "tslint -c tslint.json src/**/*.ts",

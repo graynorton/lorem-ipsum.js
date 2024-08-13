@@ -12,6 +12,7 @@
 # production
 /docs
 /dist
+/dist-esm
 
 # misc
 .DS_Store
