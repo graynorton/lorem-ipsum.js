@@ -1,12 +1,12 @@
 {
-  "name": "lorem-ipsum",
-  "version": "2.0.8",
-  "description": "Generates passages of lorem ipsum text suitable for use as placeholder copy in web pages, graphics, and more. Works in the browser, NodeJS, and React Native.",
-  "author": "Nickolas Kenyeres <nkenyeres@gmail.com> (http://knicklabs.github.com)",
+  "name": "@gnorts/lorem-ipsum",
+  "version": "1.0.0",
+  "description": "Unsupported fork of lorem-ipsum",
+  "author": "Gray Norton <gnorts@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git://github.com/knicklabs/node-lorem-ipsum.git"
+    "url": "git://github.com/graynorton/lorem-ipsum.git"
   },
   "main": "dist/index",
   "module": "dist-esm/index.js",
